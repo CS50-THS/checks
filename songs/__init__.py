@@ -292,14 +292,8 @@ def test6():
 @check50.check(sql_exists)
 def test7():
     """7.sql produces correct result"""
-    check_single_cell(run_query("7.sql"), "0.599", floating=True)
-
-
-@check50.check(sql_exists)
-def test8():
-    """8.sql produces correct result"""
     check_single_col(
-        run_query("8.sql"),
+        run_query("7.sql"),
         {
             "rockstar (feat. 21 Savage)",
             "Psycho (feat. Ty Dolla $ign)",
