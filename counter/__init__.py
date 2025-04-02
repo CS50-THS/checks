@@ -8,7 +8,7 @@ def index_exists():
 @check50.check()
 def style_exists():
     """style.css exists"""
-    check50.exists("style.css")
+    check50.exists("styles.css")
 
 @check50.check()
 def script_exists():
