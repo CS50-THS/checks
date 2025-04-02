@@ -2,7 +2,7 @@ check50:
   files: &check50_files
     - !require index.html
     - !require script.js
-    - !require style.css
+    - !require styles.css
 
 submit50: 
   files: *check50_files
