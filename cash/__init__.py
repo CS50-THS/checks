@@ -37,8 +37,8 @@ def test_sorting_descending():
 @check50.check(compiles)
 def test_equal_scores():
     """handles students with tied scores without crashing"""
-    out = check50.run("./roster Alice:85 Bob:85").stdout()
-    if "85" not in out or "1." not in out or "2." not in out:
+    output = check50.run("./roster Alice:85 Bob:85").stdout()
+    if "85" not in output or "1." not in output or "2." not in output:
         raise check50.Failure("Expected tied scores to both appear in output rankings")
 
 
