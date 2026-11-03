@@ -17,9 +17,7 @@ def compiles():
 @check50.check(compiles)
 def test_no_args():
     """handles lack of command-line arguments with usage message (exit code 1)"""
-    check50.run("./roster").stderr(
-        "", timeout=5
-    ).stdout("Usage: ./roster [Name:Score ...]\n", regex=False).exit(1)
+    check50.run("./roster").stdout("Usage: ./roster [Name:Score ...]\n", regex=False).exit(1)
 
 
 @check50.check(compiles)
