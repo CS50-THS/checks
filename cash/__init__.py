@@ -48,4 +48,3 @@ def test_valgrind_clean():
     check50.c.valgrind("./roster", "Alice:90", "Bob:75", "Charlie:85").stdout(
         "^1\\. Alice - 90\n2\\. Charlie - 85\n3\\. Bob - 75\n?$", regex=True
     ).exit(0)
-
